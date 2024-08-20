@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+    <!-- Favicon -->
+    <link rel="icon" href="image.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+        <source src="videos/backround.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Stop All Sounds Button -->
+    <button id="stop-sounds-button" onclick="stopAllSounds()">
+        <img src="icon/stop.png" alt="Stop All Sounds">
+    </button>
+
+    <div class="soundboard">
+        <h1>Soundboard</h1>
+        <ul>
+            <li onclick="playSound('sound1')">Celebrate</li>
+            <li onclick="playSound('sound2')">Hits Hard</li>
+        </ul>
+    </div>
+
+    <!-- Credits Button -->
+    <div class="credits-button-container">
+        <a href="credits.html" class="credits-button">Credits</a>
+    </div>
+
+    <!-- Add your sound files here -->
+    <audio id="sound1" src="sounds/sound1.mp3"></audio>
+    <audio id="sound2" src="sounds/sound2.mp3"></audio>
+    <audio id="sound3" src="sounds/sound3.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
